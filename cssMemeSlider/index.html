@@ -10,40 +10,42 @@
 <body>
     <div class="container">
         <div class="slider">
-            <div class="slider__image active">
-                <img src="assets/images/meme1.jpg" alt="Meme">
-            </div>
-            <div class="slider__text active">
-                <p>Good times ahead</p>
-            </div>
+            <input type="radio" id="meme1" name="meme_controls" checked>
+            <input type="radio" id="meme2" name="meme_controls">
+            <input type="radio" id="meme3" name="meme_controls">
+            <input type="radio" id="meme4" name="meme_controls">
 
-            <div class="slider__image ">
-                <img src="assets/images/meme2.jpeg" alt="Meme">
-            </div>
-            <div class="slider__text">
-                <p>What if they weren't just friends...</p>
-            </div>
+            <div class="slider__slides">
+                <div class="slider__slide" id="meme1">
+                    <img src="assets/images/meme1.jpg" alt="Meme 1" class="slider__image">
+                </div>
 
-            <div class="slider__image">
-                <img src="assets/images/meme3.jpeg" alt="Meme">
-            </div>
-            <div class="slider__text">
-                <p>His downfall should be studied</p>
-            </div>
+                <div class="slider__slide" id="meme2">
+                    <img src="assets/images/meme2.jpeg" alt="Meme 2" class="slider__image">
+                </div>
 
-            <div class="slider__image">
-                <img src="assets/images/meme4.jpg" alt="Meme">
+                <div class="slider__slide" id="meme3">
+                    <img src="assets/images/meme3.jpeg" alt="Meme 3" class="slider__image">
+                </div>
+
+                <div class="slider__slide" id="meme4">
+                    <img src="assets/images/meme4.jpg" alt="Meme 4" class="slider__image">
+                </div>
             </div>
-            <div class="slider__text">
-                <p>uncanny resemblance</p>
-            </div>
-            <div class="slider__controls">
-                <fieldset class="slider__controls-wrapper">
-                    <input type="radio" value="meme1" name="meme_controls">
-                    <input type="radio" value="meme2" name="meme_controls">
-                    <input type="radio" value="meme3" name="meme_controls">
-                    <input type="radio" value="meme4" name="meme_controls">
-                </fieldset>
+            <div class="slider__text-controls-wrapper">
+                <div class="slider__text-wrapper">
+                    <p class="slider__text" id="meme1__text">Good times ahead</p>
+                    <p class="slider__text" id="meme2__text">What if they weren't just friends...</p>
+                    <p class="slider__text" id="meme3__text">His downfall should be studied</p>
+                    <p class="slider__text" id="meme4__text">Uncanny resemblance</p>
+                </div>
+
+                <div class="slider__controls">
+                    <label for="meme1" class="slider__control"></label>
+                    <label for="meme2" class="slider__control"></label>
+                    <label for="meme3" class="slider__control"></label>
+                    <label for="meme4" class="slider__control"></label>
+                </div>
             </div>
         </div>
     </div>
